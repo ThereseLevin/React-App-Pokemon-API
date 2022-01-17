@@ -1,7 +1,20 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Pagination from "./Pagination";
 
-export default function PokemonList({ pokemons, setCurrentPokemon }) {
+export default function PokemonList({
+  pokemons,
+  prevPageUrl,
+  nextPageUrl,
+  setCurrentPageUrl,
+}) {
+  function goToNextPage() {
+    setCurrentPageUrl(nextPageUrl);
+  }
+
+  function goToPrevPage() {
+    setCurrentPageUrl(prevPageUrl);
+  }
   return (
     <div className="pokemon-list">
       {pokemons.map((p) => (
@@ -11,6 +24,10 @@ export default function PokemonList({ pokemons, setCurrentPokemon }) {
           </div>
         </div>
       ))}
+      <Pagination
+        goToNextPage={nextPageUrl ? goToNextPage : null}
+        goToPrevPage={prevPageUrl ? goToPrevPage : null}
+      />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-const printArray = (filteredPoke, type, name, bajs) => {
+const printArray = (filteredPoke, type, name, x) => {
   //   let arr = [];
   //   if (typeof filteredPoke.extra[type] == "Object") {
   //     arr = Object.keys(filteredPoke.extra[type]);
@@ -7,7 +7,7 @@ const printArray = (filteredPoke, type, name, bajs) => {
   //   }
 
   return filteredPoke.map((item, i) => {
-    return <li key={`${bajs}-${i}`}>item:{item[type][name]}</li>;
+    return <li key={`${x}-${i}`}>item:{item[type][name]}</li>;
   });
 };
 

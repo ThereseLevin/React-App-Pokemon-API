@@ -1,0 +1,2 @@
+body{margin:0}body nav{background-color:#313131;padding:10px;font-family:arial}body nav ul{margin:0;list-style:none;display:flex;justify-content:space-evenly}body nav ul a{color:white}body .pokemon-list{display:grid;max-width:1000px;margin:auto;grid-template-columns:1fr 1fr 1fr 1fr;gap:20px;padding:10px}body .pokemon-list>div{border:1px solid grey;padding:20px}body .pokemon-list>div a{display:inline}
+/*# sourceMappingURL=style.min.css.map */

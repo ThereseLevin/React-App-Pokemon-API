@@ -1,1 +1,1 @@
-# React-App-Pokemon-API
+# Pokemon React App
